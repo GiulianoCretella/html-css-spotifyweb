@@ -45,6 +45,7 @@ aside{
 main{
     width: calc(100% - 200px);
     background-color: #141922;
+    overflow-y: auto;
 }
 
                  /* barra fissa sopra */
@@ -101,19 +102,23 @@ margin-top: 80px;
  .lista-main ul li:hover .greenbar{
      visibility: visible;
  }
-
+                     /* album box container */
  /* titolo categoria */
  .article-title{
      width:100%;
+     padding:15px;
  }
  .article-title h1{
      font-size: 1.5em;
      font-weight: 600;
-     margin:10px;
      color: white;
+     padding: 5px 0;
  }
 
 /* box album */
+.album-box-container{
+    margin: 30px 0;
+}
 .album-box{
     display: flex;
     gap: 20px;
@@ -128,6 +133,7 @@ margin-top: 80px;
     min-width: 150px;
 }
 .box img{
+    margin-bottom: 5px;
     width:100%;
 }
 
@@ -137,7 +143,7 @@ margin-top: 80px;
     padding: 10px 0;
     color:white;
 }
-.album-box .box p{
+.album-box .box p, .article-title p{
     font-size: 0.7em;
     font-weight: 500;
     color: #707276;
