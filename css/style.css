@@ -1,0 +1,57 @@
+/* reset  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.debug{
+    border: 1px solid white;
+}
+
+/* barra fissa sotto  */
+.play-bar{
+    width: 100%;
+    height: 80px;
+    background-color: #282828;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 500;
+}
+
+                 /* involucro principale */
+.wrapper{
+    height: calc(100vh - 80px);
+    width: 100%;
+    display: flex;
+}
+
+                  /* lista sinistra */
+aside{
+    width: 220px;
+    background-color: #000000;
+}
+
+
+                  /* corpo principale */
+main{
+    width: calc(100% - 220px);
+    background-color: #141922;
+    height: 100%;
+}
+
+                 /* barra fissa sopra */
+.up-fixed{
+    width: calc(100% - 220px);
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+                 /* contenuto principale */
+.main-content{
+width: 100%;
+
+}
