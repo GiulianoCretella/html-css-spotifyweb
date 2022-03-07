@@ -15,7 +15,6 @@
     clear: both;
 }
 
-
                   /* barra fissa sotto  */
 .play-bar{
     width: 100%;
@@ -26,6 +25,157 @@
     bottom: 0;
     z-index: 500;
 }
+.flex-nav{
+    display: flex;
+    justify-content: space-between;
+}
+/* barre generale */
+
+.nav-left, .nav-right{
+    flex:0 1 25%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.nav-right{
+    justify-content: flex-end;
+    padding:0 10px ;
+}
+
+/* nav sinistra */
+
+.nav-left .song-img{
+    width:50px;
+    margin-left: 10px;
+}
+.song-img img{
+    width: 100%;
+    min-width: 50px
+}
+.song-name{
+    padding: 5px;
+}
+.song-name h3{
+    font-size: 0.8em;
+    color: white;
+    font-weight: bolder;
+}
+.song-name p{
+    font-size: 0.6em;
+    font-weight: bolder;
+    color:#808080;
+}
+.nav-left article .fa-regular{
+    margin:0 5px;
+    color:#808080;
+}
+.nav-left article .fa-regular:hover{
+    color: white;
+}
+
+/* nav destra */
+
+.nav-right article .fa-solid{
+    color: white;
+    margin: 0 5px;
+}
+.sound{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.active-sound{
+    width:20px;
+    height: 3px;
+    background-color: #b6b6b6;
+    border-radius: 1px 0 0 1px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.active-sound:hover{
+    background-color: #ACFF2E;
+}
+.active-sound .dot{
+    background-color: white;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    opacity: 0;
+}
+.active-sound:hover .dot{
+    opacity: 1;
+}
+.sound-bar{
+    width: 40px;
+    height: 3px;
+    background-color: #707276;
+    border-radius: 0 1px 1px 0;
+}
+
+/* nav centrale */
+
+.nav-player{
+    flex:0 1 50%;
+    color: white;
+}
+.elementi{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    align-items: center;
+    padding: 5px;
+}
+.elementi .fa-solid{
+    font-size: 1.3em;
+}
+.elementi .fa-regular{
+    font-size: 2em;
+    margin: 0 10px;
+}
+.elementi .fa-regular:hover{
+    font-size: 2.3em;
+}
+.player{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px auto;
+}
+.player span{
+    font-size: 0.6em;
+    margin: 1%;
+}
+.active-time{
+    width: 25%;
+    height: 4px;
+    background-color: #b6b6b6;
+    border-radius: 2px 0 0 2px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.active-time:hover{
+    background-color: #ACFF2E;
+}
+.active-time .dot{
+    background-color: white;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    opacity: 0;
+}
+.active-time:hover .dot{
+    opacity: 1;
+}
+.time-bar{
+    width: 75%;
+    height: 4px;
+    background-color: #707276;
+    border-radius: 0 2px 2px 0;
+}
+
 
                  /* involucro principale */
 .wrapper{
