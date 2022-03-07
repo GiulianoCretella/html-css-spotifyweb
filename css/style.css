@@ -28,7 +28,7 @@
 
                  /* involucro principale */
 .wrapper{
-    height: 100vh;
+    height: calc(100vh - 80px);
     width: 100%;
     display: flex;
     overflow-y: auto;
@@ -118,6 +118,7 @@ margin-top: 80px;
 /* box album */
 .album-box-container{
     margin: 30px 0;
+    margin-bottom:
 }
 .album-box{
     display: flex;
@@ -130,7 +131,7 @@ margin-top: 80px;
 }
 .album-box .box{
     flex: 0 1 calc(100% / 6 - 20px);
-    min-width: 150px;
+    min-width: 120px;
 }
 .box img{
     margin-bottom: 5px;
