@@ -195,22 +195,24 @@ html{
     border-radius: 0 2px 2px 0;
 }
 
-                  /* lista sinistra */
+                      /* lista sinistra */
 aside{
     width: 200px;
+    height: 100%;
     background-color: #000000;
 }
 /* logo  */
 .logo{
     width: 100%;
     height: 80px;
-    justify-content: flex-start;
-    display: flex;
-    align-items: center;
+    position: relative;
 }
 .logo img{
     width: 70%;
-    margin-left: 10px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 /* menu aside  */
 .main-menu{
@@ -218,13 +220,12 @@ aside{
     height: calc(100% - 80px);
     display: flex;
     flex-flow: column nowrap;
-    justify-content:space-between;
+    justify-content:center;
     align-items: flex-start;
 }
-.main-menu section, .main-menu .account{
-    flex: 0 1 20%;
+.main-menu section{
+    flex: 1 0 15%;
     width: 100%;
-    
 }
 .main-menu .menu ul li:first-child{
     display: none;
@@ -246,11 +247,12 @@ aside{
     border-left: 3px solid #ACFF2E;
 }
 .main-menu section ul li img{
-    width: 25px;
+    width: 30px;
 } 
 /* Playlist section  */
 .main-menu .playlist{
-    flex: 0 1 60%;
+    flex: 0 1 75%;
+    overflow-y: auto;
 }
 
 .main-menu .playlist ul li #playlist-title{
@@ -270,6 +272,30 @@ aside{
 }
 .main-menu .playlist ul li a:hover{
     border: none;
+}
+.main-menu .playlist ul li a{
+    gap: 10px;
+}
+
+/* account section  */
+.main-menu .account{
+    flex: 0 1 10%;
+}
+.account ul .install img{
+    width: 20px;
+}
+.account ul .install{
+    border-bottom: 1px solid #707276;
+}
+.account ul .profile img{
+    width: 20px;
+    background-color: #707276;
+    border-radius: 50%;
+}
+.account ul .profile a{
+    font-size: 1.1em;
+    color: white;
+
 }
 
                   /* corpo principale */
