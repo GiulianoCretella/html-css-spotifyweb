@@ -226,7 +226,7 @@ aside{
     width: 100%;
     
 }
-.main-menu section ul li:first-child{
+.main-menu .menu ul li:first-child{
     display: none;
 }
 .main-menu section ul li a{
@@ -248,13 +248,29 @@ aside{
 .main-menu section ul li img{
     width: 25px;
 } 
-
-
+/* Playlist section  */
 .main-menu .playlist{
     flex: 0 1 60%;
 }
 
-
+.main-menu .playlist ul li #playlist-title{
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+.main-menu .playlist ul li #crea-playlist{
+    font-size: 0.9em;
+}
+.main-menu .playlist ul li #crea-playlist span{
+    font-size: 2em;
+    width: 35px;
+    text-align: center;
+    background-color: #707276;
+    color: #000000;
+}
+.main-menu .playlist ul li a:hover{
+    border: none;
+}
 
                   /* corpo principale */
 main{
