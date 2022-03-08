@@ -10,11 +10,6 @@
     color: white;
 }
 
-.clearfix::after{
-    content: '';
-    display: table;
-    clear: both;
-}
 html{
     min-height: 80px;
 }
@@ -88,6 +83,7 @@ html{
 }
 .nav-left article .fa-regular:hover{
     color: white;
+    cursor: pointer;
 }
 
 /* nav destra */
@@ -114,6 +110,7 @@ html{
 }
 .active-sound:hover{
     background-color: #ACFF2E;
+    cursor: pointer;
 }
 .active-sound .dot{
     background-color: white;
@@ -124,6 +121,7 @@ html{
 }
 .active-sound:hover .dot{
     opacity: 1;
+    cursor: pointer;
 }
 .sound-bar{
     width: 40px;
@@ -141,19 +139,20 @@ html{
 .elementi{
     display: flex;
     justify-content: center;
-    gap: 2%;
+    gap: 15px;
     align-items: center;
     padding-top: 10px;
 }
 .elementi .fa-solid{
-    font-size: 1.3em;
+    font-size: 1em;
 }
 .elementi .fa-regular{
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 0 10px;
 }
 .elementi .fa-regular:hover{
-    font-size: 2.3em;
+    font-size: 2em;
+    cursor: pointer;
 }
 .player{
     display: flex;
@@ -177,6 +176,7 @@ html{
 }
 .active-time:hover{
     background-color: #ACFF2E;
+    cursor: pointer;
 }
 .active-time .dot{
     background-color: white;
@@ -187,6 +187,7 @@ html{
 }
 .active-time:hover .dot{
     opacity: 1;
+    cursor: pointer;
 }
 .time-bar{
     width: 75%;
@@ -222,9 +223,10 @@ aside{
     flex-flow: column nowrap;
     justify-content:center;
     align-items: flex-start;
+    overflow: hidden;
 }
 .main-menu section{
-    flex: 1 0 15%;
+    flex: 0 1 15%;
     width: 100%;
 }
 .main-menu .menu ul li:first-child{
@@ -296,6 +298,9 @@ aside{
     font-size: 1.1em;
     color: white;
 
+}
+.main-menu .account ul li a:hover{
+    border-left: none;
 }
 
                   /* corpo principale */
