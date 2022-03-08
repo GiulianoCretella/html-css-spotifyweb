@@ -13,69 +13,88 @@
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- barra fissa sotto -->
-    <div class="play-bar flex-nav">
-        <!-- nav sinistra  -->
-        <nav class="nav-left ">
-            <article class="song-img">
-                <img src="./img/sinister.jpeg" alt="">
-            </article>
-            <article class="song-name">
-                <h3>Sinister</h3>
-                <p>Brano Nome</p>
-            </article>
-            <article>
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-folder"></i>
-            </article>
-        </nav>
-        <!-- /nav sinistra  -->
-
-        <!-- nav centrale  -->
-        <nav class="nav-player">
-            <div class="elementi">
-                <i class="fa-solid fa-shuffle"></i>
-                <i class="fa-solid fa-backward-step"></i>
-                <i class="fa-regular fa-circle-play"></i>
-                <i class="fa-solid fa-forward-step"></i>
-                <i class="fa-solid fa-arrow-rotate-right"></i>
-            </div>
-            <div class="player">
-                <span>0:25</span>
-                <div class="active-time">
-                    <div class="dot"></div>
-                </div>
-                <div class="time-bar"></div>
-                <span>4:35</span>
-            </div>
-
-        </nav>
-        <!-- /nav centrale  -->
-
-        <!-- nav destra  -->
-        <nav class="nav-right">
-            <article>
-                <i class="fa-solid fa-list"></i>
-                <i class="fa-solid fa-tv"></i>
-                <i class="fa-solid fa-volume-high"></i>
-            </article>
-            <article class="sound">
-                <div class="active-sound">
-                    <div class="dot"></div>
-                </div>
-                <div class="sound-bar"></div>
-            </article>
-        </nav>
-        <!-- /nav destra  -->
-        
-    </div>
-    <!-- /barra fissa sotto -->
-
     <!-- involucro principale -->
     <div class="wrapper">
+
+    <!-- barra fissa sotto -->
+
+        <div class="play-bar flex-nav">
+            <!-- nav sinistra  -->
+            <nav class="nav-left ">
+                <article class="song-img">
+                    <img src="./img/sinister.jpeg" alt="">
+                </article>
+                <article class="song-name">
+                    <h3>Sinister</h3>
+                    <p>Brano Nome</p>
+                </article>
+                <article class="left-element">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </article>
+            </nav>
+            <!-- /nav sinistra  -->
+
+            <!-- nav centrale  -->
+            <nav class="nav-player">
+                <div class="elementi">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                </div>
+                <div class="player">
+                    <span>0:25</span>
+                    <div class="active-time">
+                        <div class="dot"></div>
+                    </div>
+                    <div class="time-bar"></div>
+                    <span>4:35</span>
+                </div>
+
+            </nav>
+            <!-- /nav centrale  -->
+
+            <!-- nav destra  -->
+            <nav class="nav-right">
+                <article class="right-element">
+                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-tv"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                </article>
+                <article class="sound">
+                    <div class="active-sound">
+                        <div class="dot"></div>
+                    </div>
+                    <div class="sound-bar"></div>
+                </article>
+            </nav>
+            <!-- /nav destra  -->
+            
+        </div>
+        <!-- /barra fissa sotto -->
+
+   
         <!-- lista sinistra -->
         <aside>
+            <div class="logo">
+                <img src="./img/logo.svg" alt="logo-spotify">
+                
 
+            </div>
+            <div class="main-menu">
+                <section>
+                    <ul>
+                        <li><a href="#"><img src="./img/logo-small.svg" alt="logo-small"></a></li>
+                        <li><a href="#"><img src="./img/home.svg" alt="home"> <span>Home</span></a></li>
+                        <li><a href="#"><img src="./img/search.svg" alt="ricerca"><span>Cerca</span></li></a>
+                        <li><a href="#"><img src="./img/libreria.svg" alt="libreria"> <span>La tua libreria</span></a></li>
+                    </ul>
+                </section>
+                <div class="playlist"></div>
+                <div class="account"></div>
+            </div>
         </aside>
         <!-- lista sinistra -->
         <!-- corpo principale  -->

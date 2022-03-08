@@ -9,10 +9,21 @@
     border: 1px solid white;
     color: white;
 }
+
 .clearfix::after{
     content: '';
     display: table;
     clear: both;
+}
+html{
+    min-height: 80px;
+}
+
+                /* involucro principale */
+.wrapper{
+    height: calc(100vh - 80px);
+    width: 100%;
+    display: flex;
 }
 
                   /* barra fissa sotto  */
@@ -37,6 +48,7 @@
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
+    flex-wrap: nowrap;
 }
 .nav-right{
     justify-content: flex-end;
@@ -44,7 +56,9 @@
 }
 
 /* nav sinistra */
-
+.left-element{
+    width: 40px;
+}
 .nav-left .song-img{
     width:50px;
     margin-left: 10px;
@@ -67,16 +81,21 @@
     color:#808080;
 }
 .nav-left article .fa-regular{
-    margin:0 5px;
+    font-size: 1em;
+    margin:5px ;
     color:#808080;
+    display: block;
 }
 .nav-left article .fa-regular:hover{
     color: white;
 }
 
 /* nav destra */
-
+.right-element{
+    width: 80px;
+}
 .nav-right article .fa-solid{
+    font-size: 0.7em;
     color: white;
     margin: 0 5px;
 }
@@ -122,9 +141,9 @@
 .elementi{
     display: flex;
     justify-content: center;
-    gap: 5%;
+    gap: 2%;
     align-items: center;
-    padding: 5px;
+    padding-top: 10px;
 }
 .elementi .fa-solid{
     font-size: 1.3em;
@@ -176,25 +195,71 @@
     border-radius: 0 2px 2px 0;
 }
 
-
-                 /* involucro principale */
-.wrapper{
-    height: calc(100vh - 80px);
-    width: 100%;
-    display: flex;
-    overflow-y: auto;
-}
-
                   /* lista sinistra */
 aside{
     width: 200px;
     background-color: #000000;
 }
+/* logo  */
+.logo{
+    width: 100%;
+    height: 80px;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 70%;
+    margin-left: 10px;
+}
+/* menu aside  */
+.main-menu{
+    width: 100%;
+    height: calc(100% - 80px);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content:space-between;
+    align-items: flex-start;
+}
+.main-menu section, .main-menu .account{
+    flex: 0 1 20%;
+    width: 100%;
+    
+}
+.main-menu section ul li:first-child{
+    display: none;
+}
+.main-menu section ul li a{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+    font-weight: bold;
+    gap: 6px;
+    margin: 8px 0;
+    color:#808080 ;
+    text-decoration: none;
+    padding:0  10px;
+}
+.main-menu section ul li a:hover{
+    color: white;
+    border-left: 3px solid #ACFF2E;
+}
+.main-menu section ul li img{
+    width: 25px;
+} 
+
+
+.main-menu .playlist{
+    flex: 0 1 60%;
+}
+
 
 
                   /* corpo principale */
 main{
     width: calc(100% - 200px);
+    height: 100%;
     background-color: #141922;
     overflow-y: auto;
 }
@@ -248,7 +313,7 @@ margin-top: 80px;
    gap: 20px;
 }
 .lista-main ul li{
-    font-size: 0.7em;
+    font-size: 0.9em;
     list-style-type: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -288,8 +353,7 @@ margin-top: 80px;
 
 /* box album */
 .album-box-container{
-    margin: 30px 0;
-    margin-bottom:
+    margin: 50px 0;
 }
 .album-box{
     display: flex;
