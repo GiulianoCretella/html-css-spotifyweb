@@ -1,0 +1,62 @@
+@media screen and (min-width:768px) and (max-width:998px) {
+    .album-box .box{
+        flex: 0 1 calc(100% / 4 - 20px);
+        object-fit: cover;
+    }
+}
+
+
+
+
+@media screen and (min-width:576px) and (max-width:768px) {
+    .album-box .box{
+        flex: 0 1 calc(100% / 2 - 20px);
+        object-fit: cover;
+    }
+    .album-box{
+        justify-content:center;
+    }
+}
+
+
+
+@media screen and (max-width:576px) {
+    .main-menu .menu ul li:first-child{
+        display: block;
+    }
+
+    .up-fixed{
+        width: calc(100% - 50px);
+    }
+    .logo{
+        display: none;
+    }
+    .main-menu{
+        justify-content: space-between;
+        height: 100%;
+    }
+    .main-menu span{
+        display: none;
+    }
+    .account ul .install{
+        border-bottom: none
+    }
+    aside{
+        width: 50px;
+    }
+    .playlist{
+        display: none;
+    }
+    main{
+        width: calc(100% - 50px);
+    }
+    .album-box .box{
+        flex: 0 1 calc(100% / 2 - 20px);
+        object-fit: cover;
+        max-width: 180px;
+    }
+    .album-box{
+        justify-content:center;
+    }
+
+}
