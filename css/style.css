@@ -12,6 +12,7 @@
 
 html{
     min-height: 80px;
+    min-width: none;
 }
 
                 /* involucro principale */
