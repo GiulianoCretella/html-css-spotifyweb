@@ -1,0 +1,78 @@
+
+.main-content-bonus .jumbo{
+    width: 100%;
+    background: rgb(253,29,29);
+    background: linear-gradient(180deg, rgba(253,29,29,1) 0%, rgba(255,163,34,1) 64%);
+    height: 350px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 5%;
+    padding: 4%;
+}
+.jumbo .album-img{
+    flex: 0 1 250px;
+    min-width: 250px;
+}
+.album-img img{
+    width: 100%;
+    border-radius: 5px;
+}
+.jumbo .album-info{
+    flex: 0 1 70%;
+    min-width: 150px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;   
+   
+}
+.album-info .artist{
+    flex: 0 1 15%;
+    color: #842165;
+    font-size: 2vw;
+    font-weight: bold;
+
+}
+.album-info .title{
+    flex: 0 1 55%;
+    color: #842165;
+    font-size: 6vw;
+    font-weight: bolder;
+}
+.album-info .description{
+    flex: 0 1 15%; 
+    color: #842165;
+    font-size: 1.2vw;
+}
+.album-info .spotify-views{
+    flex: 0 1 15%;
+    color: #842165;
+    font-size:1vw;
+}
+.songs-container{
+    width: 90%;
+    margin: 20px auto;
+}
+.album-elements{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+.album-elements .fa-circle-play{
+    font-size: 3em;
+    color:#1DB955;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.1s linear;
+}
+.album-elements .fa-circle-play:hover{
+    transform: scale(1.2);
+}
+.album-elements .fa-heart, .album-elements .fa-ellipsis{
+font-size: 1.5em;
+color: #76787C;
+}
+.album-elements .fa-heart:hover, .album-elements .fa-ellipsis:hover{
+    color: white;
+}
