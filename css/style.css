@@ -140,6 +140,8 @@ html{
     gap: 15px;
     align-items: center;
     padding-top: 10px;
+    height: 40px;
+  }
 }
 .elementi .fa-solid{
     font-size: 1em;
@@ -149,7 +151,7 @@ html{
     margin: 0 10px;
 }
 .elementi .fa-regular:hover{
-    font-size: 2em;
+    transform: scale(1.2);
     cursor: pointer;
 }
 .player{
@@ -241,8 +243,9 @@ aside{
     color:#808080 ;
     text-decoration: none;
     padding:0  10px;
+    border-left: 3px solid black;
 }
-.main-menu section ul li a:hover{
+.main-menu .menu ul li a:hover{
     color: white;
     border-left: 3px solid #ACFF2E;
 }
@@ -271,7 +274,7 @@ aside{
     color: #000000;
 }
 .main-menu .playlist ul li a:hover{
-    border: none;
+   color: white;
 }
 .main-menu .playlist ul li a{
     gap: 10px;
@@ -280,6 +283,7 @@ aside{
 /* account section  */
 .main-menu .account{
     flex: 0 1 10%;
+    padding: 0 15px;
 }
 .account ul .install img{
     width: 20px;
@@ -298,7 +302,7 @@ aside{
 
 }
 .main-menu .account ul li a:hover{
-    border-left: none;
+    color: white;
 }
 
                   /* corpo principale */

@@ -24,7 +24,9 @@
     .main-menu .menu ul li:first-child{
         display: block;
     }
-
+    .main-menu .account{
+        padding: 0;
+    }
     .up-fixed{
         width: calc(100% - 50px);
     }
