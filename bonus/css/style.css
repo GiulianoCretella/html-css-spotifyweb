@@ -466,7 +466,6 @@ margin-top: 80px;
     right: 10%;
     bottom: 40%;
 }
-
 .background-player .fa-solid{
     color:#1DB955;
     background-color: white;
@@ -477,7 +476,7 @@ margin-top: 80px;
     bottom:30%;
     right:10%;
     display: block;
-    transition: all 0.5s linear;
+    transition: all 0.1s linear;
 }
 
 .background-player .fa-solid:hover{
