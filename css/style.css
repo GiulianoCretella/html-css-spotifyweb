@@ -286,20 +286,20 @@ aside{
     padding: 0 15px;
 }
 .account ul .install img{
-    width: 20px;
+    width: 25px;
 }
 .account ul .install{
     border-bottom: 1px solid #707276;
 }
-.account ul .profile img{
-    width: 20px;
+.account ul .profile a img{
+    width: 25px;
+    height: 25px;
     background-color: #707276;
     border-radius: 50%;
 }
 .account ul .profile a{
     font-size: 1.1em;
     color: white;
-
 }
 .main-menu .account ul li a:hover{
     color: white;
