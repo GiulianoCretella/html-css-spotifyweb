@@ -1,6 +1,5 @@
 
 .main-content-bonus .jumbo{
-    width: 100%;
     background: rgb(253,29,29);
     background: linear-gradient(180deg, rgba(253,29,29,1) 0%, rgba(255,163,34,1) 64%);
     height: 350px;
@@ -50,14 +49,16 @@
     font-size:1vw;
 }
 .songs-container{
-    width: 90%;
-    margin: 20px auto;
+    padding: 5%;
+    background: rgb(18,18,18);
+    background: linear-gradient(0deg, rgba(18,18,18,1) 87%, rgba(126,84,25,1) 93%, rgba(152,100,27,1) 95%, rgba(152,100,27,1) 96%, rgba(255,163,33,1) 98%);
 }
 .album-elements{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 15px;
+    margin-bottom: 15px;
 }
 .album-elements .fa-circle-play{
     font-size: 3em;
@@ -75,4 +76,54 @@ color: #76787C;
 }
 .album-elements .fa-heart:hover, .album-elements .fa-ellipsis:hover{
     color: white;
+}
+
+.table{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 0;
+}
+hr{
+    margin: 10px 0;
+}
+.first-last-col{
+    flex: 0 1 1%;
+    align-items: center;
+}
+.col{
+    flex: 0 1 calc(100% / 3 - 2%);
+    display: flex;
+    align-items: center;
+}
+.songs-image  img{
+   width: 100%;
+}
+.songs-image{
+    flex: 0 0 15%;
+}
+.songs-name{
+    flex: 0 1 80%;
+    margin-left: 15px;
+    font-size: 0.8em;
+}
+.first-last-col span{
+    color: #9F9F9F;
+    font-size: 0.8em;
+}
+.col h1{
+    color: white;
+    font-size: 1em;
+    font-weight: 400;
+}
+.col span{
+    color: #9F9F9F;
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.table:hover{
+    background-color: rgba(221, 221, 221, 0.3);
+    border-radius: 5px;
 }
