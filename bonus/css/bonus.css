@@ -173,6 +173,7 @@ hr{
 
 audio{
     border-radius: 20px;
+    overflow: hidden;
 }
 audio:hover{
     background-color: #832264;
