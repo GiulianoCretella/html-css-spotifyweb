@@ -11,7 +11,7 @@
 }
 .jumbo .album-img{
     flex: 0 1 250px;
-    min-width: 250px;
+    min-width: 100px;
 }
 .album-img img{
     width: 100%;
@@ -19,11 +19,9 @@
 }
 .jumbo .album-info{
     flex: 0 1 70%;
-    min-width: 150px;
     display: flex;
     flex-flow: column nowrap;
     gap: 5px;   
-   
 }
 .album-info .artist{
     flex: 0 1 15%;
@@ -77,7 +75,17 @@ color: #76787C;
 .album-elements .fa-heart:hover, .album-elements .fa-ellipsis:hover{
     color: white;
 }
+.songs-container div.table:first-of-type{
+    color: white;
+}
 
+.table:hover{
+    background-color: rgba(221, 221, 221, 0.3);
+    border-radius: 5px;
+}
+#first:hover{
+    background-color:#121212 ;
+}
 .table{
     display: flex;
     flex-flow: row nowrap;
@@ -99,6 +107,7 @@ hr{
 }
 .songs-image  img{
    width: 100%;
+   min-width:50px
 }
 .songs-image{
     flex: 0 0 15%;
@@ -123,7 +132,4 @@ hr{
     font-weight: 300;
 }
 
-.table:hover{
-    background-color: rgba(221, 221, 221, 0.3);
-    border-radius: 5px;
-}
+

@@ -16,6 +16,17 @@
     .album-box{
         justify-content:center;
     }
+    .table .col:nth-child(4){
+        display: none;
+    }
+    .col{
+        flex: 0 1 calc(100% / 2 - 10%);
+
+    }
+    .first-last-col{
+        flex: 0 1 5%;
+
+    }
 }
 
 
@@ -59,6 +70,31 @@
     }
     .album-box{
         justify-content:center;
+    }
+
+
+
+    /* bonus html */
+    .table .col:nth-child(3){
+        display: none;
+    }
+    .table .col:nth-child(4){
+        display: none;
+    }
+    .col{
+        flex: 0 1 calc(100% - 10%);
+
+    }
+    .first-last-col{
+        flex: 0 1 5%;
+
+    }
+    .songs-image img{
+        width: 50px;
+        height: 50px;
+     }
+    hr{
+        width: 100%;
     }
 
 }
