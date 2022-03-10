@@ -75,6 +75,25 @@ color: #76787C;
 .album-elements .fa-heart:hover, .album-elements .fa-ellipsis:hover{
     color: white;
 }
+.more{
+    position: relative;
+}
+.more .more-choice{
+    width: 200px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background-color: #121212;
+    display: flex;
+    flex-flow: column;
+    padding: 20%;
+    border-radius: 3px;
+}
+.more .more-choice span{
+    color: #76787C;
+    border-bottom:1px solid #76787C;
+    font-size: 0.7em;
+}
 .songs-container div.table:first-of-type{
     color: white;
 }

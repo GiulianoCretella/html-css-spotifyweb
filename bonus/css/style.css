@@ -400,6 +400,19 @@ margin-top: 80px;
  }
 
 /* box album */
+.box .box-player .hendrix-twin{
+    position: relative;
+}
+.box .box-player .hendrix2{
+    position: absolute;
+    left: 0;
+    top:0;
+    display:none;
+}
+.box .box-player .hendrix-twin:hover .hendrix2{
+    display: block;
+    z-index: 499;
+}
 .album-box-container{
     margin: 50px 0;
 }
@@ -477,8 +490,10 @@ margin-top: 80px;
     right:10%;
     display: block;
     transition: all 0.1s linear;
+    z-index: 500;
 }
 
 .background-player .fa-solid:hover{
     transform: scale(1.3);
 }
+
