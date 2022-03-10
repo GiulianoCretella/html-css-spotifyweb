@@ -1,4 +1,4 @@
-
+                     /* jumbo */
 .main-content-bonus .jumbo{
     background: rgb(253,29,29);
     background: linear-gradient(180deg, rgba(253,29,29,1) 0%, rgba(255,163,34,1) 64%);
@@ -46,6 +46,8 @@
     color: #842165;
     font-size:1vw;
 }
+
+               /* contenitore canzoni + elementi */
 .songs-container{
     padding: 5%;
     background: rgb(18,18,18);
@@ -113,19 +115,19 @@ color: #76787C;
     color: white;
 }
 
-.table:hover{
-    background-color: rgba(221, 221, 221, 0.3);
-    border-radius: 5px;
-}
-#first:hover{
-    background-color:#121212 ;
-}
+
+                  /* tabella canzoni */
+
 .table{
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
     margin: 10px 0;
+}
+.table:hover{
+    background-color: rgba(221, 221, 221, 0.3);
+    border-radius: 5px;
 }
 hr{
     width: 92%;
@@ -138,6 +140,9 @@ hr{
     flex: 0 1 calc(100% / 3 - 4%);
     display: flex;
     align-items: center;
+}
+#first:hover{
+    background-color:#121212 ;
 }
 .songs-image  img{
    width: 100%;
